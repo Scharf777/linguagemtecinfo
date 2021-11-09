@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	document.write('<h1> Lista Mercado </h1>' );
+
+    var lista = [];
+	var item = ' ';
+	var contador = 0;
+	while (item != '*'){
+	item = prompt('digite seu item ou aperte "*" para sair');
+	lista[contador] = item;	
+	contador++;
+	}
+
+	contador = 0;
+
+	while(contador < lista.length){
+		document.write('<br>');
+		
+		document.write(lista[contador]);
+
+		contador++;
+	}
+</script>
